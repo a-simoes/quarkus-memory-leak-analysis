@@ -38,5 +38,8 @@ java -jar target/quarkus-app/quarkus-run.jar
 
 [Open your browser and validate](http://localhost:8080/hello)
 
+# Reduce heap memory to speed up things
+`java -Xms10m -Xmx200m -jar target/quarkus-app/quarkus-run.jar`
+
 
 
