@@ -26,7 +26,7 @@ has the issue fixed!
 
 3. Check the results
 
-#The code
+# The code
 ## Build the code with the issue
 `cd code`
 `mvn clean install`
@@ -42,12 +42,12 @@ has the issue fixed!
 ## Reduce heap memory to speed up things
 `java -Xms100m -Xmx100m -jar target/quarkus-app/quarkus-run.jar`
 
-#The test [jmeter-java-dsl](https://github.com/abstracta/jmeter-java-dsl)
+# The test [jmeter-java-dsl](https://github.com/abstracta/jmeter-java-dsl)
 ## run tests
 `cd load-test`
 `mvn test`
 
-##check the report
+## check the report
 `google-chrome html-report/index.html`
 
 
