@@ -2,13 +2,15 @@
 A memory leak analysis
 
 ## This project is based on a Quarkus quickstarts project
-[getting-started](https://github.com/quarkusio/quarkus-quickstarts/tree/main/getting-started)
+Github repository with [getting-started](https://github.com/quarkusio/quarkus-quickstarts/tree/main/getting-started)
 
-Version [1.12.1](https://github.com/quarkusio/quarkus-quickstarts/tree/1.12.1.Final/getting-started) 
+Tag [1.12.1](https://github.com/quarkusio/quarkus-quickstarts/tree/1.12.1.Final/getting-started) 
 contains the memory leak we want to investigate
 
-Version [1.12.2](https://github.com/quarkusio/quarkus-quickstarts/blob/1.12.2.Final/getting-started/pom.xml)
+Tag [1.12.2](https://github.com/quarkusio/quarkus-quickstarts/blob/1.12.2.Final/getting-started/pom.xml)
 has the issue fixed!
+
+[Issue reference](https://github.com/quarkusio/quarkus/pull/15546)
 
 # Changes to base project
 1. Log something to expose the issue
