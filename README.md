@@ -26,20 +26,29 @@ has the issue fixed!
 
 3. Check the results
 
+#The code
+## Build the code with the issue
+`cd code`
+`mvn clean install`
 
-# Build the version with the issue
-mvn clean install -DskipTests
+## Build the code with the issue fixed
+`mvn clean install -P withoutIssue`
 
-# Build the version with the issue fixed
-mvn clean install -DskipTests -P withoutIssue
-
-# Start application
-java -jar target/quarkus-app/quarkus-run.jar
+## Start application
+`java -jar target/quarkus-app/quarkus-run.jar`
 
 [Open your browser and validate](http://localhost:8080/hello)
 
-# Reduce heap memory to speed up things
-`java -Xms10m -Xmx200m -jar target/quarkus-app/quarkus-run.jar`
+## Reduce heap memory to speed up things
+`java -Xms100m -Xmx100m -jar target/quarkus-app/quarkus-run.jar`
+
+#The test [jmeter-java-dsl](https://github.com/abstracta/jmeter-java-dsl)
+## run tests
+`cd load-test`
+`mvn test`
+
+##check the report
+`google-chrome html-report/index.html`
 
 
 
