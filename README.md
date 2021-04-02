@@ -36,4 +36,7 @@ mvn clean install -DskipTests -P withoutIssue
 # Start application
 java -jar target/quarkus-app/quarkus-run.jar
 
+[Open your browser and validate](http://localhost:8080/hello)
+
+
 
