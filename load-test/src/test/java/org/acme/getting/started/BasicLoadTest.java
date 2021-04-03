@@ -36,7 +36,7 @@ public class BasicLoadTest {
     private static final String URL_ENDPOINT = "http://localhost:8080/hello";
 
     @Test
-    public void testPerformance() throws IOException {
+    public void testResourceLeak() throws IOException {
         String reportPath = "html-report_" + Instant.now().toString().replace(":", "-");
 
         DslHttpSampler sampler = httpSampler("hello", preProcessorVars -> {
