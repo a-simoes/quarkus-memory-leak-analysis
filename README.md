@@ -27,6 +27,7 @@ has the issue fixed!
 # The code
 ## Build the code with the issue
 `cd code`
+
 `mvn clean install`
 
 ## Build the code with the issue fixed
@@ -43,6 +44,7 @@ has the issue fixed!
 # The test written using [jmeter-java-dsl](https://github.com/abstracta/jmeter-java-dsl)
 ## run tests
 `cd load-test`
+
 `mvn test`
 
 ## check the report for performance comparisons
